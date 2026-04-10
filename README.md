@@ -34,6 +34,15 @@ npm run start
 - app/layout.tsx: 공통 레이아웃 및 metadata
 - app/globals.css: 전역 스타일
 
+## 사진 교체
+
+- public/photos/jai-01.jpg
+- public/photos/jai-02.jpg
+- public/photos/jai-03.jpg
+- public/photos/jai-04.jpg
+
+위 경로에 사진을 넣으면 축하 페이지의 플레이스홀더 대신 실제 사진이 자동으로 표시됩니다.
+
 ## Vercel 배포
 
 1. GitHub 저장소에 푸시합니다.
