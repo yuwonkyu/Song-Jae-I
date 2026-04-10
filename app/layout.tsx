@@ -21,7 +21,23 @@ const lobsterTwo = Lobster_Two({
 
 export const metadata: Metadata = {
   title: "포근이 송재이",
-  description: "송재이의 탄생을 축하하는 모바일 축하 랜딩페이지입니다.",
+  description: "송재이의 탄생을 축하해!.",
+  openGraph: {
+    title: "포근이 송재이",
+    description: "송재이의 탄생을 축하해!.",
+    images: [
+      {
+        url: "/POop.jpg",
+        alt: "송재이 오픈그래프 이미지",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "포근이 송재이",
+    description: "송재이의 탄생을 축하해!.",
+    images: ["/POop.jpg"],
+  },
 };
 
 export default function RootLayout({
