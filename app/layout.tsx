@@ -22,6 +22,7 @@ const lobsterTwo = Lobster_Two({
 export const metadata: Metadata = {
   title: "포근이 송재이",
   description: "송재이의 탄생을 축하해!.",
+  metadataBase: new URL("https://song-jae-i.vercel.app/"),
   openGraph: {
     title: "포근이 송재이",
     description: "송재이의 탄생을 축하해!.",

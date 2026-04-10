@@ -56,7 +56,7 @@ const timelineItems = [
     id: "angel-photo",
     side: "right",
     type: "photo",
-    src: "/po6.png",
+    src: "/ji4.png",
     alt: "송재이 네 번째 사진",
     label: "04",
     caption: "우리 집에 온 작은 천사",
@@ -116,8 +116,8 @@ function TimelineContent({ item }: { item: (typeof timelineItems)[number] }) {
   const isMultilineSubtitle = item.subtitle.includes("\n");
 
   return (
-    <div className="w-full max-w-[9.6rem] rounded-[1.35rem] border border-white/50 bg-[linear-gradient(180deg,rgba(255,250,252,0.96),rgba(250,236,245,0.9))] px-3 py-2.5 text-center text-[#8b5e82] shadow-[0_16px_34px_rgba(113,64,141,0.18)] backdrop-blur-sm sm:max-w-[10.8rem] sm:rounded-3xl sm:px-4 sm:py-3">
-      <p className="text-[clamp(0.78rem,5.9vw,1.7rem)] font-bold leading-none tracking-[-0.06em] text-balance sm:text-[clamp(1rem,4vw,1.7rem)]">
+    <div className="w-full max-w-[10rem] rounded-[1.35rem] border border-white/50 bg-[linear-gradient(180deg,rgba(255,250,252,0.96),rgba(250,236,245,0.9))] px-3 py-2.5 text-center text-[#8b5e82] shadow-[0_16px_34px_rgba(113,64,141,0.18)] backdrop-blur-sm sm:max-w-[11.6rem] sm:rounded-3xl sm:px-4 sm:py-3">
+      <p className="text-[clamp(0.78rem,5.4vw,1.55rem)] font-bold leading-none tracking-[-0.06em] text-balance sm:text-[clamp(0.98rem,3vw,1.55rem)]">
         {item.title}
       </p>
       <p
@@ -183,7 +183,7 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="relative mx-auto max-w-[340px] px-0.5 pb-2 pt-1 sm:px-1">
+            <div className="relative mx-auto max-w-[340px] px-0.5 pb-2 pt-1 sm:max-w-[380px] sm:px-1">
               <div className="timeline-thread absolute bottom-5 left-1/2 top-0 w-0.5 -translate-x-1/2 rounded-full sm:w-[3px]" />
 
               <div className="space-y-3.5 sm:space-y-5">
