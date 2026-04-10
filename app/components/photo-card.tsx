@@ -22,8 +22,8 @@ export function PhotoCard({ src, alt, label, caption, tone }: PhotoCardProps) {
   const [hasError, setHasError] = useState(false);
 
   return (
-    <figure className="group relative -rotate-2 rounded-[1.6rem] bg-white p-2 shadow-[0_18px_40px_rgba(98,51,128,0.22)] transition duration-500 odd:rotate-2">
-      <div className="relative aspect-[6/4.5] overflow-hidden rounded-[1.15rem] bg-white">
+    <figure className="group relative w-full max-w-full min-w-0 -rotate-2 rounded-[1.15rem] bg-white p-[5px] shadow-[0_18px_40px_rgba(98,51,128,0.22)] transition duration-500 odd:rotate-2 sm:rounded-[1.35rem] sm:p-1.5">
+      <div className="relative aspect-[6/4.5] overflow-hidden rounded-[0.9rem] bg-white sm:rounded-[1.05rem]">
         {hasError ? (
           <div
             className={`bg-linear-to-br flex h-full w-full flex-col items-center justify-center ${toneStyles[tone]} px-4 text-center text-[#7a4a73]`}
@@ -31,10 +31,10 @@ export function PhotoCard({ src, alt, label, caption, tone }: PhotoCardProps) {
             <span className="mb-2 text-[0.65rem] font-semibold tracking-[0.32em] text-white/80">
               JAI PHOTO
             </span>
-            <span className="font-(family-name:--font-display) text-2xl leading-none">
+            <span className="font-(family-name:--font-display) text-[clamp(1.35rem,7vw,2rem)] leading-none">
               {label}
             </span>
-            <span className="mt-2 text-xs font-medium text-[#8a5a81]">
+            <span className="mt-2 text-[10px] font-medium text-[#8a5a81] sm:text-xs">
               {caption}
             </span>
           </div>
